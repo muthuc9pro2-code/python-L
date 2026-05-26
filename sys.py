@@ -12,4 +12,4 @@ print(full_name)
 print(email)
 
 # This is important concept for scheduling ,this sys.argv is nothing but take the value from terminal 
- 
+
