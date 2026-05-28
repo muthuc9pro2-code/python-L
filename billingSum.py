@@ -1,4 +1,4 @@
-amount=1200
+amount=1300
 tax=amount/18
 total=amount+tax
 print("Total bill is:", total)
