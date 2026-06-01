@@ -9,5 +9,17 @@ def sum(*args):
         total += num
     return total
 
+# **kwargs is used to pass key and value type of variable length arguments to a function.
+
 def create_profile(**kwargs):
+    profile = {}
+    for key, value in kwargs.items():
+        profile[key] = value
+    return(profile)
+
+def sample_function(**kwargs):
+    print("kwargs working")
+    for key,value in kwargs.items():
+        print(f"{key}: {value}")
+
     
