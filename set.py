@@ -19,7 +19,16 @@ print(uber_city1.intersection(uber_city2))
 print(uber_city1.difference(uber_city2))
 
 # set can be used to perform set operations like union, intersection and difference etc 
-# set is mutable but it can only add or remove but not repplace or update the existing element in the set
+# set is mutable but it can only add or remove but not replace or update the existing element in the set
+
+uber_city1.add("hyderabad")
+print(uber_city1)
+
+uber_city1.remove("mumbai")
+print(uber_city1)
+
+# you can only replace by add and remove in set
+
 
 
 
