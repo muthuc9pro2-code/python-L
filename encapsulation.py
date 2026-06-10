@@ -8,31 +8,31 @@ class order:
     def final_cal(self):
         return self.__total_amount - self.__discount
     
-    def adminView(self):
+    def get_adminView(self):
         return {
             "customer" : self.customer_name,
             "items" : self.items,
-            "amount" : self.__total_amount,
+            "total" : self.__total_amount,
             "discount" : self.__discount,
-            "final amount" : self.final_cal()
+            "final_total" : self.final_cal()
         }
     
-    def customerView(self):
+    def get_customerView(self):
         return {
             "customer" : self.customer_name,
             "items" : self.items,
-            "final amount" : self.final_cal()
+            "final_total" : self.final_cal()
         }
     
 class adminPortal:
     def admin(self, order):
-        return order.adminView()
-    
+        print(order.get_adminView())
+
 class customerPortal:
     def customer(self, order):
-        return order.customerView()
-    
-Order = order("muthu", ["pizza", "burger", "nimathi"], 600, 120)
+        print(order.get_customerView())
+
+Order = order("muthu", "nimathi", 1000, 232)
 
 admin = adminPortal()
 customer = customerPortal()
@@ -47,7 +47,4 @@ def printCustomer():
 
 printAdmin()
 printCustomer()
-    
-
-
         
