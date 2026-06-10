@@ -21,7 +21,7 @@ class example:
 obj1 = example()
 obj1.insideClass()
 
-class childEx(example):
+class childEx1(example):
     def child(self):
         print("example by using child")
         print("public :", self.public)
@@ -31,12 +31,12 @@ class childEx(example):
         except AttributeError:
             print("private : cannot access")
 
-obj2 = childEx()
+obj2 = childEx1()
 obj2.child()
 
 # we cannot use private here cause its private shit but we can use private variable by using name mangling 
 
-class childEx(example):
+class childEx2(example):
     def child(self):
         print("example by using child")
         print("public :", self.public)
@@ -46,7 +46,7 @@ class childEx(example):
         except AttributeError:
             print("private : cannot access")
 
-obj2 = childEx()
+obj2 = childEx2()
 obj2.child()
 
 # Attribute is a variable that belongs to an object. It stores data/value for that object. You access it using dot notation
@@ -54,14 +54,72 @@ obj2.child()
 class independendCode:
     def access_form_other_class(self,obj):
         print("example by indepentedCode")
-        print("public :", self.public)
-        print("private :", self.__private)
+        print("public :", obj.public)
+        print("private :", obj._example__private)
         try:
-            print("protected :", self._example_protected)
+            print("protected :", obj._protected)
         except AttributeError:
             print("private : cannot access")
 
 obj4 = independendCode()
 obj4.access_form_other_class(obj1)
 
+# __example using the parent name with underscore infront is called name mangling
 
+# lets see in method, its just same as attribute's
+ 
+class damal:
+    def public(self):
+        print("public")
+
+    def _protected(self):
+        print("protected")
+
+    def __private(self):
+        print("private")
+
+    def inisdeClass(self):
+        print("insideClass")
+        self.public()
+        self._protected()
+        self.__private()
+
+obj1 = damal()
+obj1.inisdeClass()
+
+class damalChild(damal):
+    def call(self):
+        print("child class")
+        self.inisdeClass()
+    
+    def callIndividual(self):
+        print("child class")
+        self.public()
+        self._protected()
+        try:
+            self.__private()
+        except AttributeError:
+            print("private : cannot access")
+        
+
+obj2 = damalChild()
+obj2.call()
+obj2.callIndividual()
+
+# this is an example by using child class
+# if i call individually private shit it throws error but if i call the insideClass its just print everything including the private variable
+
+class dubuku:
+    def calling(self, obj):
+        print("independent class")
+        obj.public()
+        obj._protected()
+        try:
+            obj.__private()
+        except AttributeError:
+            print("private : cannot access")
+
+obj3 = dubuku()
+obj3.calling(obj1)
+
+    
