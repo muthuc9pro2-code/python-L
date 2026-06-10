@@ -52,7 +52,7 @@ class headMaster(chairman):
     def student2(self):
         print("kumar")
 
-obj = vicePrinciple()
+obj = headMaster()
 obj.student1()
 obj.student2()
 
