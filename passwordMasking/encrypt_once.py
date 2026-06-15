@@ -18,7 +18,7 @@ if __name__ == "__main__":
     generate_key()
 
     # replace with real mysql root password
-    encrypted = encrypt_password("root")
+    encrypted = encrypt_password("996232")
     print("Encrypted password (copy this to password_utlis.py):")
     print(encrypted)
 

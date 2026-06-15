@@ -9,17 +9,18 @@ connection = pymysql.connect(
     database='test', # make sure this db exist
     cursorclass=pymysql.cursors.DictCursor #dictCursor is nothing but just change the output into dictionaries
 )
-"""
+
 try: 
     with connection.cursor() as cursor:  #cursor will execute the queries in the mysql
 
         # step2: create a table
-        create_query = 
+        create_query = """
         CREATE TABLE IF NOT EXISTS employees (
              id INT AUTO_INCREMENT PRIMARY KEY,
              name VARCHAR(100),
              department VARCHAR(100)
         );
+        """
     
         cursor.execute(create_query)
 
@@ -41,8 +42,9 @@ try:
 
 finally: 
     connection.close()
-"""
+
 # you can also write that data's in other file too
+# dont run the above code make it as command to understand i written that 
 
 try: 
     with connection.cursor() as cursor:  #cursor will execute the queries in the mysql
