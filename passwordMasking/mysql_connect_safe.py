@@ -18,4 +18,3 @@ if __name__ == "__main__":  #This is a python predefined idiom
     connect_mysql()
 
 
-

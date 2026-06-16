@@ -15,7 +15,10 @@ def load_key():
 def encrypt_password(password):
     key = load_key()
     f = Fernet(key)
-    return f.encrypt(password.encode())
+    encrypted = f.encrypt(password.encode())
+    with open("passwordMasking/get_decrypt", "wb") as file:
+        file.write(encrypted)
+    return encrypted
 
 def decrypt_password(encrypted_password):
     key = load_key()
@@ -24,5 +27,5 @@ def decrypt_password(encrypted_password):
     return fakeStr(decrypt)
 
 def get_decrypted_password():
-    encrypt_password = b'gAAAAABqLrMwd3EEcCblwGA4nIFmhuNHBoHWd6cuTOPfv1HUEl258JiEuY0nS8FTFTi7JFWQzbBR9OlCThEpggiPhCAxl--Fog=='
+    encrypt_password = open("passwordMasking/get_decrypt", "rb").read()
     return decrypt_password(encrypt_password)
