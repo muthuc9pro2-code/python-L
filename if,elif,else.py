@@ -8,7 +8,7 @@ elif mark >= 70:
 elif mark >= 60:
     print("grade is D")  
 else:
-    print("grade is bF")  
+    print("grade is F")  
 
 # elif is nothing but else if
 
