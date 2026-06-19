@@ -1,0 +1,31 @@
+wsl - windows subsystem for linux
+
+CRON:
+
+cron is one of way to schedule code and it will not work on windows , its only available on linux, mac  
+we can use cron in windows by installing ubuntu(linux) in windows
+website to get the cron time scheduling syntax -- crontab.guru (or just chatgpt bro)
+
+
+WHILE:
+
+we can also use while loop to schedule, but this method is not recommended
+
+
+LINUX COMMANDS : 
+
+ls -lstr    --> to see all files in that folder/path
+vi          --> is a default editor in terminal (vi is basically a older version of vim )
+crontab -e  --> edit the crontab 
+crontab -r  --> to remove scheduling(just forget this, dont ever use this)
+crontab -l  --> to list the scheduling
+* * * * *   --> by default this is one min, we can change the star and tell the cron the scheduling time you should leave space between the *
+pwd         --> print working directory(pwd) it shows "which folder am i currently inside?"
+nohup       --> its a important command that even when you close the terminal the code still execute as per schedule
+ps -aux     --> its like task manager shows all the running shit even apps, whatever just everything
+kill -9     --> we use this to kill the process of the any specific running shit ,afet kill -9 we should write the id of the running shit --> kill -9 thisFile
+>           --> to overwrite
+>>          --> to append
+&           --> & is used to get terminal free for other use 
+tail -f     --> just give file name after that tail -f like kill -9 it will print all thing and upcoming shit in that file
+
