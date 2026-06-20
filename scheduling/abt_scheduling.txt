@@ -29,3 +29,12 @@ kill -9     --> we use this to kill the process of the any specific running shit
 &           --> & is used to get terminal free for other use 
 tail -f     --> just give file name after that tail -f like kill -9 it will print all thing and upcoming shit in that file
 
+
+AIRFLOW : 
+
+airflow is like project manager 
+it handles ur project data, eg like scheduling shit
+DAG(directed acyclic graph) - in airflow the workflow/pipelines is called as dag
+
+
+ETL(this is a project name) - Extract transform load
