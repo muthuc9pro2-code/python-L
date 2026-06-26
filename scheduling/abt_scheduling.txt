@@ -35,6 +35,10 @@ AIRFLOW :
 airflow is like project manager 
 it handles ur project data, eg like scheduling shit
 DAG(directed acyclic graph) - in airflow the workflow/pipelines is called as dag
+yellow colour - qeued 
+red colour - failed
+blue colour - running 
+green colour - sucessful
 
 
 ETL(this is a project name) - Extract transform load

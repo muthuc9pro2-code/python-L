@@ -15,7 +15,7 @@ def generate_key():
 
 if __name__ == "__main__":
     # uncomment this only the first time
-    generate_key()
+    #generate_key()
 
     # replace with real mysql root password
     encrypted = encrypt_password(input("Enter the password : "))
