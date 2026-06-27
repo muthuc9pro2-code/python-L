@@ -1,0 +1,7 @@
+dag_prac/
+dags/_pycache_/
+logs/
+airflow.cfg
+airflow.db
+airflow.db-shm
+airflow.db-wal
