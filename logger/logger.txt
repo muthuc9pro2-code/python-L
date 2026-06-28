@@ -1,0 +1,13 @@
+LOGGER : 
+      a logger is a tool used to record messages from your program while it runs, which can help you debug, monitor, and maintain your 
+      code more effectively. it's a part of built-in logging module in python 
+
+LOGGER LEVEL :
+       * debug - detailed info (for dev only)
+       * info - general info(app started, etc.)
+       * warning - something might go wrong
+       * error - something went wrong
+       * critical - serious error (app may crash)
+
+IN LOG FILE -> we can serach level by using clrt + f
+

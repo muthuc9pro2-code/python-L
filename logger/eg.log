@@ -1,0 +1,4 @@
+2026-06-28 11:49:04,466 - INFO - Dividing 10 by 2
+2026-06-28 11:49:04,466 - DEBUG - result: 5.0
+2026-06-28 11:49:04,466 - INFO - Dividing 10 by 0
+2026-06-28 11:49:04,467 - ERROR - Tried to divide by zero!
