@@ -61,7 +61,7 @@ for n in num:
 # placeHolder
 
 for i in range(5):
-    pass # pass is used as a placeholder when you want to write a loop or function but you dont want to implement it now . It allows the code to run without any errors, but it doesn't do anything. In the above code, ypu  can just implement the loop later when you have the logic ready.
+    pass # pass is used as a placeholder when you want to write a loop or function but you dont want to implement it now . It allows the code to run without any errors, but it doesn't do anything. In the above code, you  can just implement the loop later when you have the logic ready.
 
 # small logics 
 
