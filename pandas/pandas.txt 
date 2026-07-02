@@ -1,0 +1,161 @@
+✅ 1. What is Pandas?
+
+Pandas is a powerful Python library used for:
+- Data analysis
+- Data manipulation
+- Data cleaning
+- Reading and writing different file formats
+
+It provides two main data structures:
+1. Series (1D)
+2. DataFrame (2D)
+
+
+------------------------------------------------------------
+
+✅ 2. What is a DataFrame?
+
+A DataFrame is the core data structure in Pandas.
+
+It is a 2-dimensional table made up of rows and columns.
+
+Think of it like:
+- Excel spreadsheet
+- SQL table
+- CSV file loaded into Python
+
+
+------------------------------------------------------------
+
+✅ Key Features of DataFrame
+
+✅ 1. 2D Structure
+
+- Contains rows and columns.
+- Similar to a spreadsheet.
+
+Example:
+
+Name     Age
+John      20
+David     25
+
+
+------------------------------------------------------------
+
+✅ 2. Labeled Axes
+
+Columns have names (labels).
+
+Example:
+Name
+Age
+Salary
+
+Rows also have labels called Index.
+
+Default Index:
+0
+1
+2
+3
+
+You can also create custom indexes.
+
+
+------------------------------------------------------------
+
+✅ 3. Heterogeneous Data
+
+Each column can store a different data type.
+
+Example:
+
+Name      -> String
+Age       -> Integer
+Salary    -> Float
+Passed    -> Boolean
+
+Different data types can exist in the same DataFrame.
+
+
+------------------------------------------------------------
+
+✅ 4. Easy Column Operations
+
+You can easily:
+
+- Select columns
+- Add new columns
+- Rename columns
+- Delete columns
+- Update column values
+
+Example:
+
+df["Age"]
+
+df["Salary"] = ...
+
+df.drop(...)
+
+
+------------------------------------------------------------
+
+✅ 5. Built-in Functions
+
+Pandas provides many built-in functions for data analysis.
+
+Examples:
+
+- Sorting
+- Filtering
+- Grouping
+- Aggregation
+- Merging
+- Joining
+- Pivot tables
+- Statistical summaries
+
+These reduce the amount of code you need to write.
+
+
+------------------------------------------------------------
+
+✅ 6. Data Import and Export
+
+Pandas can easily read and write many file formats.
+
+Supported formats include:
+
+- CSV
+- Excel
+- JSON
+- SQL Database
+- Parquet
+- HTML
+
+Examples:
+
+pd.read_csv()
+
+pd.read_excel()
+
+pd.read_json()
+
+df.to_csv()
+
+df.to_excel()
+
+
+------------------------------------------------------------
+
+✅ Why is Pandas Popular?
+
+✔ Easy to learn
+✔ Fast for data analysis
+✔ Works well with NumPy
+✔ Used in Data Science
+✔ Used in Machine Learning
+✔ Used in Data Engineering
+✔ Used in Data Analytics
